@@ -11,7 +11,11 @@ $('ul.nav li.dropdown').hover(function() {
 $(window).scroll(function(){
     if ($(this).scrollTop() > 100){
       $('#menu').addClass('fixed');
+      $('.navbar-brand').css({"padding-top": "1px"});
+      $('#logo').css({"width": "60%"});
     } else {
       $('#menu').removeClass('fixed');
+      $('.navbar-brand').css({"padding-top": "15px"});
+      $('#logo').css({"width": "100%"});
     }  
-});
+}); 

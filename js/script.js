@@ -9,7 +9,7 @@ $('ul.nav li.dropdown').hover(function() {
   /* scroll menu */
 
 $(window).scroll(function(){
-    if ($(this).scrollTop() > 100){
+    if ($(this).scrollTop() > 50){
       $('#menu').addClass('fixed');
       $('.navbar-brand').css({"padding-top": "1px"});
       $('#logo').css({"width": "60%"});

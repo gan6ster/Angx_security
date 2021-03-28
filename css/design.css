@@ -1,27 +1,30 @@
+/*========================================================
+                        MENU 
+  ========================================================*/
+
 #menu {
 	position: absolute;
-  	width: 100%;
-  	height:60px;
-  	top: -80px;
-  	margin-top: 70px;
-  	transition: top 1s;
-    padding-top: 10px;
+  width: 100%;
+  height:65px;
+  top: -80px;
+  margin-top: 70px;
+  transition: top 1s;
+  padding-top: 10px;
 }
 
 #menu.fixed {
-    width:100%;
-    position: fixed;
-    margin-top: -10px;
-    top: 0;
+  width:100%;
+  position: fixed;
+  margin-top: -10px;
+  top: 0;
 }
 
 .fixed {
 	position: fixed;
 	top: 0px;
-	background: #fff;
-	color: black;
+	background: #1b1b1b;
 	box-shadow: 0 3px 2px rgba(0, 0, 0, 0.04);
-    z-index: 999;
+  z-index: 999;
 }
 
 .navbar-nav {
@@ -31,34 +34,24 @@
 .navbar-brand {
     width: 110px;
 }
+
 .navbar-brand img {
     width: 100%;
 }
 
 /* menu hover */
 
-/* .hover-menu a{
-    color: white;
-}
-
-.hover-menu>li>a:hover {
-    background-color: red;
-  }
-  .hover-menu>li>a::before {
-    transform: scale(1);
-    opacity: 1;
-    transition: all 0.2s linear 0s;
-  } */
-
   .hover-menu>li>a {
     position:relative;
     color: white;
     z-index: 1;
   }
+
   .hover-menu>li>a:hover {
     background-color: transparent;
     transition: all 0.2s linear 0s;
   }
+
   .hover-menu>li>a:after {
     display: block;
     position: absolute;
@@ -71,25 +64,62 @@
     height: 1px;
     content: '.';
     color: transparent;
-    background: #F1C40F;
+    background: #d4af37;
     visibility: none;
     opacity: 0;
     z-index: -1;
     transition: all 0.5s linear 0s;
   }
+  
   .hover-menu>li>a:hover:after {
     opacity: 1;
     visibility: visible;
     height: 100%;
   }
  
-
-
-/* banner*/
+/*========================================================
+                    MAIN-BANNER 
+  ========================================================*/
 
 .main_banner {
 	background: url(../img/header.png);
 	background-position-y: -130px;
 	background-size: cover;
+  background-attachment: fixed;
 	height: 650px;
+}
+
+/*========================================================
+                      ABOUT US
+  ========================================================*/          
+
+.about_us{
+  background-color: black;
+  text-align: center;
+  color: #fff;
+}
+
+.item img {
+  width: 70%;
+}
+
+/*========================================================
+                      PHOTO-BANNER
+  ========================================================*/          
+
+.photo-banner {
+  background: url(../img/photo/2.png);
+  background-position-y: center;
+  background-size: cover;
+  background-attachment: fixed; 
+  height: 350px;
+}
+
+.photo-banner::before {
+	position: absolute;
+  width: 100%;
+	height: 350px;
+	content: "";
+	background: #000000a8;
+	opacity: 0.9;
 }

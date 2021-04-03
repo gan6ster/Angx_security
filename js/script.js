@@ -19,3 +19,23 @@ $(window).scroll(function(){
       $('#logo').css({"width": "100%"});
     }  
 }); 
+
+  /*  about us */
+
+const openBtnStyle = document.querySelector(".fas .fa-angle-double-down");
+
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = openBtnStyle;
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = openBtnStyle;
+    moreText.style.display = "inline";
+  }
+}

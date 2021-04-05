@@ -39,3 +39,88 @@ function myFunction() {
     moreText.style.display = "inline";
   }
 }
+
+  /*  corousel */
+
+$(document).ready(function(){
+  $("#owl-career2").owlCarousel({
+    items: 2,
+    loop: true,
+    lazyload: true,
+    center: true,
+    autoplay: true,
+    smartSpeed: 500,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+          items: 1,
+          center: true
+      },
+      767: {
+          items: 2,
+          center: true
+      },
+  }
+  });
+});
+
+  /*  about_us dropdown */
+
+//   let footerAcc = function() {
+//     var $allFooterAcco = $(".mob-device ul");
+//     var $allFooterAccoItems = $(".mob-device h4");
+//     if (window.innerWidth < 991) {
+//         $allFooterAcco.css('display', 'none');
+//         $allFooterAccoItems.on("click", function() {
+//             if ($(this)
+//                 .hasClass('open')) {
+//                 $(this)
+//                     .removeClass('open');
+//                 $(this)
+//                     .next()
+//                     .stop(true, false)
+//                     .slideUp(300);
+//             } else {
+//                 $allFooterAcco.slideUp(300);
+//                 $allFooterAccoItems.removeClass('open');
+//                 $(this)
+//                     .addClass('open');
+//                 $(this)
+//                     .next()
+//                     .stop(true, false)
+//                     .slideDown(300);
+//                 return false;
+//             }
+//         });
+//     } else {
+//         $allFooterAcco.css('display', 'block');
+//         $allFooterAccoItems.off();
+//     }
+// }
+// $(window).on('resize', function() {
+//     footerAcc();
+// });
+
+// $(window).resize(footerAcc);
+// footerAcc();
+
+$(document).ready(function(){
+  var $allFooterAcco = $(".service_feature ul");
+  var $allFooterAccoItems = $(".service_feature h4");
+
+  $allFooterAcco.css('display', 'none');
+  $allFooterAccoItems.on("click", function() {
+    if ($(this).hasClass('open')) {
+          $(this).removeClass('open');
+          $(this).next().stop(true, false).slideUp(300);
+    } else {
+        $allFooterAcco.slideUp(300);
+        $allFooterAccoItems.removeClass('open');
+
+        $(this).addClass('open');
+        $(this).next().stop(true, false).slideDown(300);
+
+        return false;
+      }
+  });
+});

@@ -94,7 +94,7 @@
   ========================================================*/          
 
 .services{
-  background-color: black;
+  background-color: #1b1b1b;
   text-align: center;
   color: #fff;
 }
@@ -128,24 +128,72 @@
                       ABOUT US
   ========================================================*/ 
   
-.abous_us{
-  background-color: black;
+.about_us{
+  background-color: #1b1b1b;
   text-align: center;
   color: #fff;
   padding-top: 10px;
+  padding-bottom: 30px;
 }
 
-#more {
-  display: none;
+.about_content{
+  width: 50%;
+  display: block;
+  margin: 0 auto;
 }
 
-.about_content button{
-  background: none;
-  border: none;
-  outline: none;
-  color:darkgray;
-  font-size:30px;
+.about_us .service_feature h4:after {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -4px;
+  content: " + ";
 }
+.about_us .service_feature h4.open:after {
+  content: " - ";
+}
+
+.f-links h4{
+  /* border-top: 1px solid #d4af37; */
+  border-bottom: 1px solid #d4af37;
+  padding: 15px 0;
+}
+
+.open {
+  border-bottom: none !important;
+  border-top: 1px solid #d4af37;
+}
+
+.f-links ul {
+  list-style-type: none;
+  border-bottom: 1px solid #d4af37;
+}
+
+.f-links h4:hover {
+	color: #d4af37 !important;
+	transition: all 0.5s ease 0s;
+	text-decoration: none;
+}
+
+
+
+/*========================================================
+                      photo
+  ========================================================*/
+
+.photo {
+	padding-top: 50px;
+  padding-bottom: 40px;
+}
+.photo img {
+	width: 90% !important;
+  height: 350px;
+	opacity: 0.4;
+}
+.photo img:hover {
+	opacity: 1;
+	transition-duration: 1s;
+}
+
 
 /*========================================================
                       FOOTER
@@ -306,5 +354,8 @@
     display:block;
     margin-right:0;
     font-weight:600
+  }
+  .photo{
+    padding-left: 20px;
   }
 }

@@ -20,26 +20,6 @@ $(window).scroll(function(){
     }  
 }); 
 
-  /*  about us */
-
-const openBtnStyle = document.querySelector(".fas .fa-angle-double-down");
-
-function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = openBtnStyle;
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = openBtnStyle;
-    moreText.style.display = "inline";
-  }
-}
-
   /*  corousel */
 
 $(document).ready(function(){
@@ -65,44 +45,6 @@ $(document).ready(function(){
 });
 
   /*  about_us dropdown */
-
-//   let footerAcc = function() {
-//     var $allFooterAcco = $(".mob-device ul");
-//     var $allFooterAccoItems = $(".mob-device h4");
-//     if (window.innerWidth < 991) {
-//         $allFooterAcco.css('display', 'none');
-//         $allFooterAccoItems.on("click", function() {
-//             if ($(this)
-//                 .hasClass('open')) {
-//                 $(this)
-//                     .removeClass('open');
-//                 $(this)
-//                     .next()
-//                     .stop(true, false)
-//                     .slideUp(300);
-//             } else {
-//                 $allFooterAcco.slideUp(300);
-//                 $allFooterAccoItems.removeClass('open');
-//                 $(this)
-//                     .addClass('open');
-//                 $(this)
-//                     .next()
-//                     .stop(true, false)
-//                     .slideDown(300);
-//                 return false;
-//             }
-//         });
-//     } else {
-//         $allFooterAcco.css('display', 'block');
-//         $allFooterAccoItems.off();
-//     }
-// }
-// $(window).on('resize', function() {
-//     footerAcc();
-// });
-
-// $(window).resize(footerAcc);
-// footerAcc();
 
 $(document).ready(function(){
   var $allFooterAcco = $(".service_feature ul");

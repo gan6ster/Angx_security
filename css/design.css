@@ -50,6 +50,7 @@
   .hover-menu>li>a:hover {
     background-color: transparent;
     transition: all 0.2s linear 0s;
+    border-bottom: none;
   }
 
   .hover-menu>li>a:after {
@@ -76,6 +77,22 @@
     visibility: visible;
     height: 100%;
   }
+
+  .nav>li>a:focus {
+    text-decoration: none;
+    background-color: transparent;
+    border-top: 1px solid #d4af37;
+    border-bottom: 1px solid #d4af37;
+  }
+
+  .nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+    background-color: transparent;
+    border-top: none;
+    border-bottom: 1px solid #d4af37;
+  }
+    
+ 
+
  
 /*========================================================
                     MAIN-BANNER 
@@ -140,6 +157,7 @@
   width: 50%;
   display: block;
   margin: 0 auto;
+  text-align: justify;
 }
 
 .about_us .service_feature h4:after {
@@ -349,6 +367,11 @@
 
 @media (max-width:767px)
 {
+  .main_banner {
+    background-position-y: -130px;
+    background-size: auto;
+  }
+  
   .social-icons li.title
   {
     display:block;

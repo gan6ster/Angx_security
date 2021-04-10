@@ -1,24 +1,15 @@
-/* bootstap dropdown */
-
-$('ul.nav li.dropdown').hover(function() {
-    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
-}, function() {
-    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
-});
-  
   /* scroll menu */
 
 $(window).scroll(function(){
-    if ($(this).scrollTop() > 50){
+    if (window.innerWidth <= 767 || $(this).scrollTop() > 50){
       $('#menu').addClass('fixed');
       $('.navbar-brand').css({"padding-top": "1px"});
       $('#logo').css({"width": "60%"});
     } else {
       $('#menu').removeClass('fixed');
-      $('.navbar-brand').css({"padding-top": "15px"});
       $('#logo').css({"width": "100%"});
     }  
-}); 
+});
 
   /*  corousel */
 
@@ -66,3 +57,22 @@ $(document).ready(function(){
       }
   });
 });
+
+  /*  lazy-load scroll */
+
+const links = document.querySelectorAll(".load li a");
+
+for (const link of links) {
+  link.addEventListener("click", clickHandler);
+}
+
+function clickHandler(e) {
+  e.preventDefault();
+  const href = this.getAttribute("href");
+  const offsetTop = document.querySelector(href).offsetTop;
+
+  scroll({
+    top: offsetTop,
+    behavior: "smooth"
+  });
+}

@@ -46,6 +46,10 @@
     color: white;
     z-index: 1;
   }
+  .hover-menu>li>a>img {
+    float: right;
+    height: 20px;
+  }
 
   .hover-menu>li>a:hover {
     background-color: transparent;
@@ -90,9 +94,6 @@
     border-top: none;
     border-bottom: 1px solid #d4af37;
   }
-    
- 
-
  
 /*========================================================
                     MAIN-BANNER 
@@ -114,10 +115,27 @@
   background-color: #1b1b1b;
   text-align: center;
   color: #fff;
+  padding-bottom: 50px;
+}
+
+.services h1 {
+  margin-bottom: 20px;
+}
+
+.item {
+	width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  margin: 40px 0;
 }
 
 .item img {
-  width: 70%;
+  max-width: 100%;
+}
+.content_text {
+  font-size: 16px;
 }
 
 /*========================================================
@@ -157,7 +175,8 @@
   width: 50%;
   display: block;
   margin: 0 auto;
-  text-align: justify;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 .about_us .service_feature h4:after {
@@ -171,7 +190,6 @@
 }
 
 .f-links h4{
-  /* border-top: 1px solid #d4af37; */
   border-bottom: 1px solid #d4af37;
   padding: 15px 0;
 }
@@ -299,17 +317,6 @@
     margin-bottom:30px
   }
 }
-@media (max-width:767px)
-{
-  .site-footer
-  {
-    padding-bottom:0
-  }
-  .site-footer .copyright-text,.site-footer .social-icons
-  {
-    text-align:center
-  }
-}
 .social-icons
 {
   padding-left:0;
@@ -365,20 +372,76 @@
   background-color:#E1306C
 }
 
-@media (max-width:767px)
-{
+@media (max-width:767px){
+/* menu-media */
+  .hover-menu{
+    text-align: center;
+  }
+  .hover-menu>li>a>img {
+    float: none;
+    margin-left: 10px;
+  }
+  .collapse.in {
+    background-color: #1b1b1b;
+  }
+  .collapsing {
+    background-color: #1b1b1b;
+  }
+  .navbar-brand{
+      padding-top: 1px;
+  }
+  #logo{
+    width: 60% !important;
+  }
+  #menu {
+    margin-top: -10px;
+    top: 0px;
+	  background: #1b1b1b;
+	  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.04);
+  }
+  .icon-bar {
+    background-color: #fff;
+  }
+
+/* banner-media */  
   .main_banner {
     background-position-y: -130px;
     background-size: auto;
+    height: 500px;
   }
+
+  .photo-banner{
+    background-size: auto; 
+    background-position-x: -930px;
+    background-position-y: -400px;
+
+  }
+
+  .f-links>ul{
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 50px;
+  }
+/* photo-media */  
   
+  .photo{
+    padding-left: 20px;
+  }
+
+/* footer-media */
+  .site-footer{
+    padding-bottom:0
+  }
+
+  .site-footer .copyright-text,.site-footer .social-icons{
+    text-align:center
+  }
+
   .social-icons li.title
   {
     display:block;
     margin-right:0;
     font-weight:600
   }
-  .photo{
-    padding-left: 20px;
-  }
+
 }

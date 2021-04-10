@@ -27,10 +27,6 @@
   z-index: 999;
 }
 
-.navbar-nav {
-    margin-right: 10px !important;
-}
-
 .navbar-brand {
     width: 110px;
 }
@@ -105,6 +101,10 @@
 	background-size: cover;
   background-attachment: fixed;
 	height: 650px;
+}
+
+.main_banner img{
+  display: none;
 }
 
 /*========================================================
@@ -372,7 +372,7 @@
   background-color:#E1306C
 }
 
-@media (max-width:767px){
+@media (max-width:991px){
 /* menu-media */
   .hover-menu{
     text-align: center;
@@ -404,12 +404,14 @@
   }
 
 /* banner-media */  
-  .main_banner {
-    background-position-y: -130px;
-    background-size: auto;
-    height: 500px;
-  }
 
+  .main_banner {
+    background: url(../img/header.png);
+    background-size: 700px;
+    background-attachment: fixed;
+    height: 410px;
+  }
+  
   .photo-banner{
     background-size: auto; 
     background-position-x: -930px;

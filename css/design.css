@@ -222,12 +222,12 @@
 .photo img {
 	width: 90% !important;
   height: 350px;
-	opacity: 0.4;
+	/* opacity: 0.4; */
 }
-.photo img:hover {
+/* .photo img:hover {
 	opacity: 1;
 	transition-duration: 1s;
-}
+} */
 
 
 /*========================================================
@@ -411,15 +411,8 @@
     height: 410px;
   }
   
-  /* .photo-banner{
-    background-size: auto; 
-    background-position-x: -930px;
-    background-position-y: -400px;
-  } */
-
   .photo-banner {
-    background-size: cover; 
-    height: 350px;
+    background-position-x: center;
   }
 
   .f-links>ul{

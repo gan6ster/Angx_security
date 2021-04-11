@@ -19,7 +19,7 @@ $(document).ready(function(){
     loop: true,
     lazyload: true,
     center: true,
-    autoplay: true,
+    autoplay: false,
     smartSpeed: 500,
     autoplayHoverPause: true,
     responsive: {
@@ -60,7 +60,7 @@ $(document).ready(function(){
 
   /*  lazy-load scroll */
 
-const links = document.querySelectorAll(".load li a");
+const links = document.querySelectorAll(".load");
 
 for (const link of links) {
   link.addEventListener("click", clickHandler);

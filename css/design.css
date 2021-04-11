@@ -144,7 +144,6 @@
 
 .photo-banner {
   background: url(../img/photo/2.png);
-  background-position-y: center;
   background-size: cover;
   background-attachment: fixed; 
   height: 350px;
@@ -412,11 +411,15 @@
     height: 410px;
   }
   
-  .photo-banner{
+  /* .photo-banner{
     background-size: auto; 
     background-position-x: -930px;
     background-position-y: -400px;
+  } */
 
+  .photo-banner {
+    background-size: cover; 
+    height: 350px;
   }
 
   .f-links>ul{
